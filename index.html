@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="Style/style.css" rel="stylesheet">
+    <title>Bernoulli</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <img src="Images/logo.png" alt="logo sumatorio" width="100px" height="100px">
+        <h1>Numeros de Bernoulli</h1>
+        <div class="input">
+          <label class="input-label" for="numero-entrante">Introduce un numero</label>
+          <input type="number" id="number" min="0" step="1" name="numero-entrante" required/>
+        </div>
+        <button type="button" id="submit">Calcular</button>
+      </form>
+
+      <div id="result">
+      </div>
+    </div>
+    <script src="Script/bernoulli.js"></script>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
